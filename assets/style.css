@@ -84,7 +84,7 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--navy); line-h
 .site-header { position: sticky; top: 0; z-index: 100; background: var(--navy); box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
 .nav { display: flex; align-items: center; gap: 24px; padding-top: 14px; padding-bottom: 14px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.brand img { border-radius: 8px; object-fit: contain; width: 42px; height: 42px; }
+.brand img { border-radius: 8px; object-fit: contain; height: 42px; width: auto; max-width: 160px; }
 .brand-copy { display: flex; flex-direction: column; }
 .brand-name { font-family: 'Instrument Serif', serif; font-size: 1.2rem; color: #fff; line-height: 1.1; }
 .brand-tag { font-size: 0.65rem; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; }
