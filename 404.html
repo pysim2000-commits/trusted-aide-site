@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found | Trusted-Aide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="The page you're looking for doesn't exist. Return to Trusted-Aide to find security and risk guidance for your business.">
+  <link rel="icon" href="/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .ta-page-404 { min-height: 100vh; display: flex; flex-direction: column; }
+    .ta-main-404 { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 1.5rem; }
+    .ta-hero-404 h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .ta-hero-404 p { max-width: 520px; margin: 0 auto 1rem; opacity: 0.8; }
+    .ta-hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+    .ta-section-404-links { margin-top: 3rem; }
+    .ta-section-404-links h2 { margin-bottom: 1rem; font-size: 1.1rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.05em; }
+    .ta-link-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+    .ta-link-list a { text-decoration: underline; opacity: 0.85; }
+    .ta-link-list a:hover { opacity: 1; }
+  </style>
+</head>
+<body class="ta-page ta-page-404">
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <img src="/assets/logo.png" alt="Trusted-Aide" width="160" height="42">
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/solutions">Solutions</a>
+        <a href="/segments">Segments</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="ta-main-404">
+    <section class="ta-hero-404">
+      <h1>That page isn't here</h1>
+      <p>The link may be broken, or the page may have moved.</p>
+      <p>Trusted-Aide helps you reduce exactly these kinds of gaps in your own systems &mdash; securely and systematically.</p>
+      <div class="ta-hero-actions">
+        <a class="btn btn-primary" href="/">Back to homepage</a>
+        <a class="btn btn-secondary" href="/contact">Talk to us</a>
+      </div>
+    </section>
+
+    <section class="ta-section-404-links">
+      <h2>Popular destinations</h2>
+      <ul class="ta-link-list">
+        <li><a href="/solutions">View our solutions</a></li>
+        <li><a href="/solution-application-security">Application security</a></li>
+        <li><a href="/segments">Who we work with</a></li>
+        <li><a href="/contact">Get in touch</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Trusted-Aide. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
