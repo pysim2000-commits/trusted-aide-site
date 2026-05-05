@@ -58,7 +58,7 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
 [data-theme='dark'] h2,
 [data-theme='dark'] h3,
 [data-theme='dark'] h4 { color: #e2e8f0; }
-.title { font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 20px; }
+.title { font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 20px; } .hero .title, .hero .eyebrow, .hero p { color: #ffffff !important; }
 .section-title { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 16px; }
 .page-subtitle { font-size: 1.2rem; color: var(--teal); font-weight: 600; margin-bottom: 20px; }
 .eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; }
