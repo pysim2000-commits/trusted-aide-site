@@ -20,8 +20,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/style.css?v=20260531-solutions-3"/>
+<link rel="stylesheet" href="assets/style.css?v=20260531-solutions-4"/>
 <style>
+  .solutions-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.75fr);
+    gap: 38px;
+    align-items: center;
+  }
+  .solutions-hero-image {
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+    background: rgba(255,255,255,0.08);
+  }
+  .solutions-hero-image img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    filter: saturate(0.95) contrast(1.02);
+  }
   #solution-overview .solutions-overview-head {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -131,10 +151,67 @@
   .solutions-detail .solution-spotlight-grid p + p {
     margin-top: 10px;
   }
+  .book-feature {
+    display: grid;
+    grid-template-columns: 116px 1fr;
+    gap: 22px;
+    align-items: center;
+    margin-top: 22px;
+    background: var(--card-mint);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--teal);
+    border-radius: var(--radius);
+    padding: 18px;
+  }
+  .book-feature img {
+    width: 116px;
+    border-radius: 6px;
+    box-shadow: 0 10px 24px rgba(13,27,42,0.18);
+  }
+  .book-feature-label {
+    color: var(--teal);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .book-feature h3 {
+    color: var(--navy);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.35;
+    margin: 0 0 6px;
+  }
+  .book-feature-subtitle {
+    color: var(--teal);
+    font-weight: 700;
+    font-size: 0.92rem;
+    margin-bottom: 8px;
+  }
+  .book-feature p {
+    color: var(--text);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0 0 12px;
+  }
+  .book-feature a {
+    color: var(--teal);
+    font-weight: 800;
+  }
+  [data-theme='dark'] .book-feature h3 {
+    color: #e2e8f0;
+  }
   [data-theme='dark'] #solution-overview .solutions-overview-head h2 {
     color: #e2e8f0;
   }
   @media (max-width: 900px) {
+    .solutions-hero-grid {
+      grid-template-columns: 1fr;
+    }
+    .solutions-hero-image {
+      max-width: 560px;
+    }
     #solution-overview .solutions-overview-head {
       grid-template-columns: 1fr;
       gap: 16px;
@@ -148,6 +225,12 @@
     }
   }
   @media (max-width: 640px) {
+    .book-feature {
+      grid-template-columns: 1fr;
+    }
+    .book-feature img {
+      width: 148px;
+    }
     #solution-overview .solutions-overview-grid {
       grid-template-columns: 1fr;
     }
@@ -196,13 +279,18 @@
 <main id="main">
 
 <section class="page-hero">
-  <div class="container">
-    <span class="eyebrow">Solutions</span>
-    <h1>How Trusted-Aide Helps</h1>
-    <p class="lede">Practical advisory and execution support across AI governance, cybersecurity, privacy, application security, fractional leadership, APAC cross-border technology decisions, training, and rapid IT enablement.</p>
-    <div class="page-hero-actions">
-      <a class="btn btn-light" href="contact.html">Discuss Your Needs</a>
-      <a class="btn btn-secondary" href="#solution-overview">Explore Solutions</a>
+  <div class="container solutions-hero-grid">
+    <div>
+      <span class="eyebrow">Solutions</span>
+      <h1>How Trusted-Aide Helps</h1>
+      <p class="lede">Practical advisory and execution support across AI governance, cybersecurity, privacy, application security, fractional leadership, APAC cross-border technology decisions, training, and rapid IT enablement.</p>
+      <div class="page-hero-actions">
+        <a class="btn btn-light" href="contact.html">Discuss Your Needs</a>
+        <a class="btn btn-secondary" href="#solution-overview">Explore Solutions</a>
+      </div>
+    </div>
+    <div class="solutions-hero-image">
+      <img src="assets/solutions-advisory-meeting.jpg" alt="Business leaders in an advisory meeting"/>
     </div>
   </div>
 </section>
@@ -268,8 +356,7 @@
       <div class="solution-service-grid">
         <div class="service-item">
           <h3>AI Readiness Assessment</h3>
-          <p>Assess business profile and ambition.</p>
-          <p>Evaluate processes, data, and risks to identify safe, high-impact AI use cases.</p>
+          <p>Assess business profile and AI ambition and evaluate processes, data, and risks to identify safe, high-impact AI use cases.</p>
         </div>
         <div class="service-item">
           <h3>AI Governance &amp; Risk Management</h3>
@@ -281,7 +368,16 @@
           <p>Design policies and controls for data protection, AI testing, and human-in-the-loop oversight, including compliance with China's AI registration and AI testing requirements.</p>
         </div>
       </div>
-      <p class="solution-note"><strong>Reference:</strong> Don't Sink Your Ship - <a href="https://www.amazon.com/dp/B0GXH5Y6QR" target="_blank" rel="noopener">Amazon listing</a></p>
+      <div class="book-feature">
+        <img src="assets/dont-sink-your-ship-cover.png" alt="Don't Sink Your Ship book cover"/>
+        <div>
+          <div class="book-feature-label">Featured Book</div>
+          <h3>Don't Sink Your Ship</h3>
+          <div class="book-feature-subtitle">What Every SME Leader Needs to Know Before Setting Sail with AI</div>
+          <p>A practical guide for SME leaders to spot the risks that can sink AI initiatives, including privacy leaks, cybersecurity gaps, strategic misalignment, deployment failures, and compliance exposure.</p>
+          <a href="https://www.amazon.com/dp/B0GXH5Y6QR" target="_blank" rel="noopener">View on Amazon</a>
+        </div>
+      </div>
     </article>
 
     <article class="solution-panel reveal" id="cyber">
