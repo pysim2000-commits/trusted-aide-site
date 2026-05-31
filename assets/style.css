@@ -537,10 +537,21 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
 .appsec-page .section-head {
   max-width: 860px;
 }
+.appsec-page .section-head .eyebrow,
+.appsec-page .content-block > .eyebrow {
+  background: var(--teal) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 18px rgba(26,107,114,0.14) !important;
+  color: #fff !important;
+  font-size: clamp(0.95rem, 1.25vw, 1.1rem) !important;
+  letter-spacing: 0.12em !important;
+  margin-bottom: 18px !important;
+  padding: 10px 24px !important;
+}
 .appsec-page .section-head .section-title {
-  font-size: clamp(1.85rem, 3vw, 2.45rem) !important;
-  line-height: 1.18 !important;
-  margin-bottom: 14px !important;
+  font-size: clamp(1.45rem, 2.35vw, 2rem) !important;
+  line-height: 1.22 !important;
+  margin-bottom: 12px !important;
 }
 .appsec-page .section-head .summary {
   color: var(--text-muted) !important;
@@ -551,8 +562,8 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   max-width: 720px;
 }
 .appsec-page .content-block .section-title {
-  font-size: clamp(1.75rem, 2.9vw, 2.35rem) !important;
-  line-height: 1.2 !important;
+  font-size: clamp(1.45rem, 2.25vw, 1.95rem) !important;
+  line-height: 1.22 !important;
   margin-bottom: 14px !important;
 }
 .appsec-page .content-block p {
@@ -567,21 +578,15 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   align-items: center;
 }
 .appsec-problem-head {
-  max-width: 760px;
+  max-width: 740px;
 }
 .appsec-problem-head .eyebrow {
-  background: var(--teal);
-  border-radius: 8px;
-  box-shadow: 0 8px 18px rgba(26,107,114,0.14);
-  color: #fff;
-  font-size: clamp(0.78rem, 1vw, 0.88rem) !important;
-  letter-spacing: 0.1em;
-  margin-bottom: 16px;
-  padding: 9px 22px;
+  font-size: clamp(1rem, 1.35vw, 1.15rem) !important;
+  margin-bottom: 16px !important;
 }
 .appsec-problem-head .section-title {
-  font-size: clamp(1.9rem, 3.2vw, 2.55rem) !important;
-  margin-bottom: 14px !important;
+  font-size: clamp(1.45rem, 2.2vw, 1.95rem) !important;
+  margin-bottom: 12px !important;
 }
 .appsec-problem-head .summary {
   font-size: clamp(0.9rem, 1.1vw, 0.98rem) !important;
