@@ -536,7 +536,13 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
 /* --- Application Security page --- */
 .appsec-page .section-head {
   max-width: 820px;
-  margin-bottom: 46px;
+  margin-bottom: 34px;
+}
+.appsec-page .section {
+  padding: 64px 0;
+}
+.appsec-page .section.surface {
+  padding: 64px 0;
 }
 .appsec-page .section-head .eyebrow {
   background: var(--teal) !important;
@@ -621,6 +627,24 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
 }
 .appsec-support-note p + p {
   margin-top: 10px;
+}
+.appsec-stat-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.75fr);
+  gap: 40px;
+  align-items: center;
+}
+.appsec-stat-head {
+  margin: 0;
+  max-width: 620px;
+  text-align: left;
+}
+.appsec-stat-head .eyebrow {
+  min-width: 0;
+}
+.appsec-stat-head .summary {
+  margin-left: 0;
+  margin-right: 0;
 }
 .owasp-grid {
   display: grid;
@@ -728,7 +752,9 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   .solutions-hero-grid { grid-template-columns: 1fr; }
   .solutions-hero-image { max-width: 560px; }
   .solutions-overview-head { grid-template-columns: 1fr; gap: 14px; text-align: center; }
-  .appsec-problem-grid, .compare-grid { grid-template-columns: 1fr; }
+  .appsec-problem-grid, .appsec-stat-grid, .compare-grid { grid-template-columns: 1fr; }
+  .appsec-stat-head { text-align: center; margin: 0 auto 24px; }
+  .appsec-stat-head .summary { margin-left: auto; margin-right: auto; }
 }
 @media (max-width: 600px) {
   .hero-grid, .feature-band, .feature-band.asym, .why-grid, .contact-grid { grid-template-columns: 1fr; }
@@ -744,6 +770,7 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   .solution-panel { scroll-margin-top: 88px; }
   .footer-grid { grid-template-columns: 1fr; }
   .section { padding: 56px 0; }
+  .appsec-page .section, .appsec-page .section.surface { padding: 48px 0; }
   .steps { grid-template-columns: 1fr; }
   .solution-section-label { min-width: 0; width: 100%; max-width: 320px; }
   .book-feature { grid-template-columns: 1fr; }
