@@ -43,14 +43,67 @@
 </div>
 </header>
 <main id="main">
-<section class="hero" style="background:var(--navy);color:#fff;padding:clamp(3rem,8vw,5rem) 0 2rem">
+<section class="hero" style="padding:clamp(3rem,8vw,5rem) 0 2rem;background:#fff">
 <div class="container">
-<span style="display:inline-block;background:var(--teal);color:#fff;padding:0.5rem 1rem;border-radius:999px;font-size:0.85rem;font-weight:700;letter-spacing:0.05em;margin-bottom:1rem">SOLUTIONS OVERVIEW</span>
-<h1 style="font-size:clamp(2rem,5vw,3.25rem);margin-top:0.75rem;max-width:20ch">How Trusted-Aide Helps</h1>
-<p style="font-size:1.1rem;line-height:1.6;max-width:70ch;margin-top:1.5rem;opacity:0.95">Trusted‑Aide helps SMEs manage risks while unlocking business value from AI, strengthen application security with SAST/DAST and automated vulnerability fixing, achieve global & China‑aligned certifications, and build secure, well‑governed technology environments — supported by practical, senior‑level advisory and fractional leadership.</p>
+<span style="display:inline-block;background:var(--mint);color:var(--navy);padding:0.5rem 1rem;border-radius:999px;font-size:0.85rem;font-weight:700;letter-spacing:0.05em;margin-bottom:1rem">SOLUTIONS OVERVIEW</span>
+<h1 style="font-size:clamp(2rem,5vw,3.25rem);margin-top:0.75rem">How Trusted-Aide Helps</h1>
+<p class="lede" style="font-size:1.1rem;line-height:1.6;max-width:70ch;margin-top:1.5rem;color:var(--text-muted)">Trusted‑Aide helps SMEs manage risks while unlocking business value from AI, strengthen application security with SAST/DAST and automated vulnerability fixing, achieve global & China‑aligned certifications, and build secure, well‑governed technology environments — supported by practical, senior‑level advisory and fractional leadership.</p>
 <div style="margin-top:2rem">
-<a class="btn btn-light" href="contact.html" style="margin-right:0.75rem">Discuss Your Needs</a>
+<a class="btn btn-primary" href="contact.html">Discuss Your Needs</a>
 </div>
+</div>
+</section>
+
+  <!-- Solution Overview Cards -->
+<section style="padding:clamp(2rem,5vw,3rem) 0">
+<div class="container">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.25rem">
+
+<!-- Card 1: AI Governance -->
+<a href="#ai" style="display:block;text-decoration:none;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:all 0.2s;box-shadow:var(--shadow-sm)" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--teal)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.borderColor='var(--border)'">
+<h3 style="font-size:1.2rem;margin:0 0 0.5rem;color:var(--navy)">AI Adoption, Risk & Governance</h3>
+<p style="font-size:0.95rem;color:var(--text-muted);margin:0;line-height:1.5">Guardrails, policies, and controls for safe AI adoption and responsible governance.</p>
+</a>
+
+<!-- Card 2: Cybersecurity -->
+<a href="#cyber" style="display:block;text-decoration:none;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:all 0.2s;box-shadow:var(--shadow-sm)" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--teal)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.borderColor='var(--border)'">
+<h3 style="font-size:1.2rem;margin:0 0 0.5rem;color:var(--navy)">Cybersecurity, Privacy & Certification</h3>
+<p style="font-size:0.95rem;color:var(--text-muted);margin:0;line-height:1.5">ISO 27001, SOC 2, PDPA compliance, and certification readiness support.</p>
+</a>
+
+<!-- Card 3: Leadership -->
+<a href="#leadership" style="display:block;text-decoration:none;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:all 0.2s;box-shadow:var(--shadow-sm)" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--teal)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.borderColor='var(--border)'">
+<h3 style="font-size:1.2rem;margin:0 0 0.5rem;color:var(--navy)">Fractional CIO / CISO / DPO Leadership</h3>
+<p style="font-size:0.95rem;color:var(--text-muted);margin:0;line-height:1.5">Senior technology and cybersecurity leadership without full-time commitment.</p>
+</a>
+
+<!-- Card 4: AppSec -->
+<a href="#appsec" style="display:block;text-decoration:none;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:all 0.2s;box-shadow:var(--shadow-sm)" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--teal)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.borderColor='var(--border)'">
+<h3 style="font-size:1.2rem;margin:0 0 0.5rem;color:var(--navy)">Application Security & Secure Engineering</h3>
+<p style="font-size:0.95rem;color:var(--text-muted);margin:0;line-height:1.5">SAST/DAST support, automated vulnerability fixing, and pen testing.</p>
+</a>
+
+<!-- Card 5: APAC -->
+<a href="#apac" style="display:block;text-decoration:none;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:all 0.2s;box-shadow:var(--shadow-sm)" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--teal)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.borderColor='var(--border)'">
+<h3 style="font-size:1.2rem;margin:0 0 0.5rem;color:var(--navy)">APAC & China Cross-Border Advisory</h3>
+<p style="font-size:0.95rem;color:var(--text-muted);margin:0;line-height:1.5">Navigate data sovereignty, China regulations, and cross-border market entry.</p>
+</a>
+
+<!-- Card 6: Training -->
+<a href="#training" style="display:block;text-decoration:none;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:all 0.2s;box-shadow:var(--shadow-sm)" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--teal)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.borderColor='var(--border)'">
+<h3 style="font-size:1.2rem;margin:0 0 0.5rem;color:var(--navy)">Training, Workshops & Capability Building</h3>
+<p style="font-size:0.95rem;color:var(--text-muted);margin:0;line-height:1.5">Executive briefings, AI governance workshops, and custom training programs.</p>
+</a>
+
+<!-- Card 7: IT Enablement -->
+<a href="#itops" style="display:block;text-decoration:none;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:all 0.2s;box-shadow:var(--shadow-sm)" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--teal)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.borderColor='var(--border)'">
+<h3 style="font-size:1.2rem;margin:0 0 0.5rem;color:var(--navy)">Rapid IT Enablement & Business Setup</h3>
+<p style="font-size:0.95rem;color:var(--text-muted);margin:0;line-height:1.5">Fast IT setup, outsourced support, and operational readiness for new offices.</p>
+</a>
+
+</div>
+</div>
+</section>
 </div>
 </section>
 
