@@ -20,7 +20,101 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/style.css"/>
+<link rel="stylesheet" href="assets/style.css?v=20260531-solutions-3"/>
+<style>
+  #solution-overview .solutions-overview-head {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 52px;
+  }
+  #solution-overview .solution-section-label {
+    display: inline-block;
+    min-width: 260px;
+    background: var(--teal);
+    color: #fff;
+    border-radius: 12px;
+    padding: 18px 36px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    box-shadow: 0 10px 24px rgba(26,107,114,0.18);
+  }
+  #solution-overview .solutions-overview-head h2 {
+    color: var(--navy);
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    margin: 24px 0 10px;
+  }
+  #solution-overview .solutions-overview-head p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  #solution-overview .solutions-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+  #solution-overview .solution-overview-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 30px;
+    box-shadow: var(--shadow);
+    color: var(--text);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  }
+  #solution-overview .solution-overview-card:nth-child(even) {
+    background: var(--card-mint);
+  }
+  #solution-overview .solution-overview-card:hover {
+    border-color: var(--teal);
+    box-shadow: 0 8px 24px rgba(13,27,42,0.12);
+    text-decoration: none;
+    transform: translateY(-3px);
+  }
+  #solution-overview .solution-overview-card h3 {
+    color: var(--teal);
+    font-size: 1.18rem;
+    margin: 0 0 16px;
+  }
+  #solution-overview .solution-overview-card p {
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.75;
+    margin: 0 0 20px;
+  }
+  #solution-overview .solution-card-link {
+    color: var(--teal);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: auto;
+  }
+  #solution-overview .solution-card-link::after {
+    content: ' ->';
+  }
+  [data-theme='dark'] #solution-overview .solutions-overview-head h2 {
+    color: #e2e8f0;
+  }
+  @media (max-width: 700px) {
+    #solution-overview .solutions-overview-grid {
+      grid-template-columns: 1fr;
+    }
+    #solution-overview .solution-section-label {
+      min-width: 0;
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -79,37 +173,37 @@
     </div>
 
     <div class="solutions-overview-grid reveal">
-      <a class="solution-overview-card" href="#ai">
+      <a class="solution-overview-card card" href="#ai">
         <h3>AI Adoption, Risk &amp; Governance</h3>
         <p>Guardrails, policies, testing, and controls for responsible AI adoption.</p>
         <span class="solution-card-link">View details</span>
       </a>
-      <a class="solution-overview-card" href="#cyber">
+      <a class="solution-overview-card card" href="#cyber">
         <h3>Cybersecurity, Privacy &amp; Certification</h3>
         <p>ISO 27001, SOC 2, CyberTrust, Cyber Essentials, and PDPA readiness.</p>
         <span class="solution-card-link">View details</span>
       </a>
-      <a class="solution-overview-card" href="#leadership">
+      <a class="solution-overview-card card" href="#leadership">
         <h3>Fractional CIO / CISO / DPO Leadership</h3>
         <p>Senior technology, cyber, privacy, and governance leadership on demand.</p>
         <span class="solution-card-link">View details</span>
       </a>
-      <a class="solution-overview-card" href="#appsec">
+      <a class="solution-overview-card card" href="#appsec">
         <h3>Application Security &amp; Secure Engineering</h3>
         <p>SAST/DAST support, false-positive reduction, pen testing, and fix workflows.</p>
         <span class="solution-card-link">View details</span>
       </a>
-      <a class="solution-overview-card" href="#apac">
+      <a class="solution-overview-card card" href="#apac">
         <h3>APAC &amp; China Cross-Border Advisory</h3>
         <p>Regulatory, architecture, data, and market-entry guidance across China and global markets.</p>
         <span class="solution-card-link">View details</span>
       </a>
-      <a class="solution-overview-card" href="#training">
+      <a class="solution-overview-card card" href="#training">
         <h3>Training, Workshops &amp; Capability Building</h3>
         <p>Executive briefings, AI governance workshops, cyber awareness, and custom training.</p>
         <span class="solution-card-link">View details</span>
       </a>
-      <a class="solution-overview-card" href="#itops">
+      <a class="solution-overview-card card" href="#itops">
         <h3>Rapid IT Enablement &amp; Business Setup</h3>
         <p>Fast IT setup, outsourced support, vendor selection, and digital enablement.</p>
         <span class="solution-card-link">View details</span>

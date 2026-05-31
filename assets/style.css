@@ -211,32 +211,33 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
 /* --- Solutions page --- */
 .solutions-overview-head {
   text-align: center;
-  max-width: 680px;
-  margin: 0 auto 42px;
+  max-width: 720px;
+  margin: 0 auto 52px;
 }
 .solution-section-label {
   display: inline-block;
+  min-width: 260px;
   background: var(--teal);
   color: #fff;
-  border-radius: var(--radius-sm);
-  padding: 12px 32px;
+  border-radius: var(--radius);
+  padding: 18px 36px;
   font-weight: 800;
-  font-size: 1rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 18px;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  box-shadow: 0 10px 24px rgba(26,107,114,0.18);
 }
 .solutions-overview-head h2 {
   color: var(--navy);
-  font-size: clamp(1.55rem, 2.8vw, 2.15rem);
-  margin-bottom: 10px;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  margin: 24px 0 10px;
 }
 [data-theme='dark'] .solutions-overview-head h2 {
   color: #e2e8f0;
 }
 .solutions-overview-head p {
   color: var(--text-muted);
-  font-size: 0.94rem;
+  font-size: 0.9rem;
   line-height: 1.6;
 }
 .solutions-overview-grid {
@@ -245,10 +246,9 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   gap: 22px;
 }
 .solution-overview-card {
-  display: grid;
-  align-content: start;
-  gap: 14px;
-  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -269,13 +269,14 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
 }
 .solution-overview-card h3 {
   color: var(--teal);
-  font-size: 1.22rem;
-  margin-bottom: 0;
+  font-size: 1.18rem;
+  margin: 0 0 16px;
 }
 .solution-overview-card p {
-  color: var(--text-muted);
+  color: var(--text);
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.75;
+  margin: 0 0 20px;
 }
 .solution-card-link {
   color: var(--teal);
@@ -409,4 +410,5 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   .footer-grid { grid-template-columns: 1fr; }
   .section { padding: 56px 0; }
   .steps { grid-template-columns: 1fr; }
+  .solution-section-label { min-width: 0; width: 100%; max-width: 320px; }
 }
