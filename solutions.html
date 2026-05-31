@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/style.css?v=20260531-solutions-5"/>
+<link rel="stylesheet" href="assets/style.css?v=20260531-site-6"/>
 <style>
   .solutions-hero-grid {
     display: grid;
@@ -43,12 +43,14 @@
     filter: saturate(0.95) contrast(1.02);
   }
   #solution-overview .solutions-overview-head {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto minmax(280px, max-content);
     align-items: center;
-    gap: 14px;
-    text-align: center;
-    max-width: 720px;
+    justify-content: center;
+    gap: 24px;
+    text-align: left;
+    width: fit-content;
+    max-width: 920px;
     margin: 0 auto 40px;
   }
   #solution-overview .solution-section-label {
@@ -224,6 +226,11 @@
     .solutions-hero-image {
       max-width: 560px;
     }
+    #solution-overview .solutions-overview-head {
+      grid-template-columns: 1fr;
+      gap: 14px;
+      text-align: center;
+    }
     #solution-overview .solutions-overview-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -263,8 +270,8 @@
     </a>
     <nav class="nav-links" aria-label="Main">
       <a href="index.html">Home</a>
-      <a href="segments.html">Customers</a>
       <a href="solutions.html" style="color:#fff;background:rgba(255,255,255,0.15)">Solutions</a>
+      <a href="segments.html">Customers</a>
       <a href="solution-application-security.html">App Security</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -276,8 +283,8 @@
   </div>
   <div class="container mobile-nav" data-mobile-nav>
     <a href="index.html">Home</a>
-    <a href="segments.html">Customers</a>
     <a href="solutions.html">Solutions</a>
+    <a href="segments.html">Customers</a>
     <a href="solution-application-security.html">App Security</a>
     <a href="contact.html">Contact</a>
   </div>
