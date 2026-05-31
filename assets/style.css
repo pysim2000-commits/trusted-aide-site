@@ -209,24 +209,57 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
 .badge { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; padding: 4px 12px; font-size: 0.75rem; color: rgba(255,255,255,0.6); }
 
 /* --- Solutions page --- */
+.solutions-overview-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 42px;
+}
+.solution-section-label {
+  display: inline-block;
+  background: var(--teal);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 12px 32px;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.solutions-overview-head h2 {
+  color: var(--navy);
+  font-size: clamp(1.55rem, 2.8vw, 2.15rem);
+  margin-bottom: 10px;
+}
+[data-theme='dark'] .solutions-overview-head h2 {
+  color: #e2e8f0;
+}
+.solutions-overview-head p {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
 .solutions-overview-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
 }
 .solution-overview-card {
   display: grid;
-  grid-template-rows: auto auto 1fr;
-  gap: 10px;
-  min-height: 220px;
+  align-content: start;
+  gap: 14px;
+  min-height: 230px;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 24px;
+  padding: 30px;
   box-shadow: var(--shadow);
   color: var(--text);
   text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.solution-overview-card:nth-child(even) {
+  background: var(--card-mint);
 }
 .solution-overview-card:hover {
   border-color: var(--teal);
@@ -236,26 +269,22 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
 }
 .solution-overview-card h3 {
   color: var(--teal);
-  font-size: 1.15rem;
+  font-size: 1.22rem;
+  margin-bottom: 0;
 }
 .solution-overview-card p {
   color: var(--text-muted);
-  font-size: 0.94rem;
+  font-size: 1rem;
+  line-height: 1.7;
 }
-.solution-card-code {
-  display: inline-grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  background: var(--mint);
+.solution-card-link {
   color: var(--teal);
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  font-size: 0.82rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: auto;
 }
-[data-theme='dark'] .solution-card-code {
-  background: var(--card-mint);
+.solution-card-link::after {
+  content: ' ->';
 }
 .solutions-detail .container {
   display: grid;
