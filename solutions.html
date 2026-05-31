@@ -23,17 +23,20 @@
 <link rel="stylesheet" href="assets/style.css?v=20260531-solutions-3"/>
 <style>
   #solution-overview .solutions-overview-head {
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto 52px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    align-items: center;
+    max-width: 920px;
+    margin: 0 auto 36px;
   }
   #solution-overview .solution-section-label {
     display: inline-block;
-    min-width: 260px;
+    min-width: 230px;
     background: var(--teal);
     color: #fff;
-    border-radius: 12px;
-    padding: 18px 36px;
+    border-radius: 10px;
+    padding: 16px 30px;
     font-family: 'Work Sans', sans-serif;
     font-size: 1.2rem;
     font-weight: 800;
@@ -43,10 +46,16 @@
     text-transform: none;
     box-shadow: 0 10px 24px rgba(26,107,114,0.18);
   }
+  #solution-overview .solutions-overview-copy {
+    text-align: left;
+  }
   #solution-overview .solutions-overview-head h2 {
     color: var(--navy);
-    font-size: clamp(1.25rem, 2vw, 1.65rem);
-    margin: 24px 0 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: clamp(1.02rem, 1.7vw, 1.25rem);
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 6px;
   }
   #solution-overview .solutions-overview-head p {
     color: var(--text-muted);
@@ -83,7 +92,10 @@
   }
   #solution-overview .solution-overview-card h3 {
     color: var(--teal);
-    font-size: 1.08rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.35;
     margin: 0 0 12px;
   }
   #solution-overview .solution-overview-card p {
@@ -105,6 +117,14 @@
     color: #e2e8f0;
   }
   @media (max-width: 900px) {
+    #solution-overview .solutions-overview-head {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      text-align: center;
+    }
+    #solution-overview .solutions-overview-copy {
+      text-align: center;
+    }
     #solution-overview .solutions-overview-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -173,8 +193,10 @@
   <div class="container">
     <div class="solutions-overview-head reveal">
       <span class="solution-section-label">Solution Areas</span>
-      <h2>Choose the area closest to your need</h2>
-      <p>Each card links to the relevant section below.</p>
+      <div class="solutions-overview-copy">
+        <h2>Choose the area closest to your need</h2>
+        <p>Each card links to the relevant section below.</p>
+      </div>
     </div>
 
     <div class="solutions-overview-grid reveal">
