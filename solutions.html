@@ -151,6 +151,20 @@
   .solutions-detail .solution-spotlight-grid p + p {
     margin-top: 10px;
   }
+  .training-service-grid .training-feature-card {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(240px, 0.45fr) 1fr;
+    gap: 18px 28px;
+    align-items: start;
+    background: var(--card-mint);
+  }
+  .training-service-grid .training-feature-card h3 {
+    margin-bottom: 0;
+  }
+  .training-service-grid .training-feature-copy p + p {
+    margin-top: 10px;
+  }
   .book-feature {
     display: grid;
     grid-template-columns: 116px 1fr;
@@ -238,6 +252,9 @@
       min-width: 0;
       width: 100%;
       max-width: 320px;
+    }
+    .training-service-grid .training-feature-card {
+      grid-template-columns: 1fr;
     }
   }
 </style>
@@ -518,7 +535,7 @@
         <h2 class="section-title">Training, Workshops &amp; Capability Building</h2>
         <p>Build internal capability through practical training that supports secure digital transformation and responsible AI adoption.</p>
       </div>
-      <div class="solution-service-grid">
+      <div class="solution-service-grid training-service-grid">
         <div class="service-item">
           <h3>Executive &amp; Board Briefings</h3>
           <p>Cyber, AI, and technology risk explained in clear business language.</p>
@@ -531,10 +548,12 @@
           <h3>Cybersecurity Awareness Training</h3>
           <p>Phishing, social engineering, incident response basics, and role-based training.</p>
         </div>
-        <div class="service-item">
+        <div class="service-item training-feature-card">
           <h3>Custom-Designed Corporate Training (IT, Cybersecurity &amp; AI)</h3>
-          <p>Deliver tailored training programmes aligned to your organisation's needs, from IT fundamentals and cybersecurity practices to AI adoption, governance, and responsible use.</p>
-          <p>Programmes can include customised content, case studies, and hands-on exercises delivered as half-day or full-day workshops for internal meetings, leadership retreats, and capability-building events.</p>
+          <div class="training-feature-copy">
+            <p>Deliver tailored training programmes aligned to your organisation's needs, from IT fundamentals and cybersecurity practices to AI adoption, governance, and responsible use.</p>
+            <p>Programmes can include customised content, case studies, and hands-on exercises delivered as half-day or full-day workshops for internal meetings, leadership retreats, and capability-building events.</p>
+          </div>
         </div>
       </div>
     </article>
