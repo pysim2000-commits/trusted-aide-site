@@ -238,6 +238,10 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   .steps { grid-template-columns: 1fr; }
 
             /* --- Solution section anchor scrolling --- */
+
+            h2[id], #ai, #cyber, #leadership, #appsec, #apac, #training, #itops {
+  scroll-margin-top: 100px;
+}
 #ai, #cyber, #leadership, #apac, #privacy, #vendor, #supply, #training, #itops {
   scroll-margin-top: 80px;
 }
