@@ -236,4 +236,9 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   .footer-grid { grid-template-columns: 1fr; }
   .section { padding: 56px 0; }
   .steps { grid-template-columns: 1fr; }
+
+            /* --- Solution section anchor scrolling --- */
+#ai, #cyber, #leadership, #apac, #privacy, #vendor, #supply, #training, #itops {
+  scroll-margin-top: 80px;
+}
 }
