@@ -343,6 +343,10 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   line-height: 1.65;
   margin: 0;
 }
+.solution-service-grid .service-item p + p,
+.solution-spotlight-grid p + p {
+  margin-top: 10px;
+}
 .solution-note {
   margin-top: 18px;
   background: var(--mint);
