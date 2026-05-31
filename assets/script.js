@@ -1,19 +1,5 @@
 // Trusted-Aide v4 – script.js
 
-// Theme toggle
-const themeBtn = document.querySelector('[data-theme-toggle]');
-const root = document.documentElement;
-const saved = localStorage.getItem('ta-theme');
-if (saved) root.setAttribute('data-theme', saved);
-if (themeBtn) {
-  themeBtn.addEventListener('click', () => {
-    const cur = root.getAttribute('data-theme');
-    const next = cur === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    localStorage.setItem('ta-theme', next);
-  });
-}
-
 // Mobile nav
 const menuBtn = document.querySelector('[data-menu-toggle]');
 const mobileNav = document.querySelector('[data-mobile-nav]');
