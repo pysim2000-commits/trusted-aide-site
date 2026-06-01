@@ -1,5 +1,59 @@
+# Trusted-Aide robots policy
+# Goal: maximise search/retrieval discoverability while opting out of known
+# AI training and bulk dataset ingestion crawlers where separate controls exist.
+
+# Standard search engines and retrieval agents remain allowed unless they match
+# a more specific block below.
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /cms/
+Disallow: /api/
+Disallow: /drafts/
+Disallow: /internal/
+Disallow: /private/
+Disallow: /staging/
+Disallow: /tmp/
+
+# AI retrieval / user-directed agents that can help users find and cite the site.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# AI training / bulk data crawlers: not licensed for model training or dataset
+# ingestion. These blocks should not affect normal Google/Bing search indexing.
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
 
 Sitemap: https://trusted-aide.com/sitemap.xml
 

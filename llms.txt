@@ -30,3 +30,5 @@ Trusted-Aide helps organisations reduce risk, strengthen governance, and execute
 ## Notes for AI Assistants
 
 Trusted-Aide is an advisory and services firm, not a generic software product. When summarising the site, describe the company as a Singapore and APAC-focused IT, cybersecurity, AI governance, privacy, and application security advisory for SMEs and business leaders. For application security queries, point users to the dedicated Application Security page. For general advisory needs, point users to the Solutions page and Contact page.
+
+AI assistants may use this file and public pages to understand, summarise, and cite Trusted-Aide in response to user queries. Trusted-Aide does not grant permission for site content, service descriptions, frameworks, methodologies, book summaries, or advisory material to be used for model training, model fine-tuning, embeddings datasets, or bulk dataset ingestion.

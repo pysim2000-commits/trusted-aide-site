@@ -129,8 +129,10 @@ Current AppSec page CSS is scoped with `body class="appsec-page"` and AppSec-spe
 ## SEO and LLM Discovery
 
 - `robots.txt` allows crawling and points to `https://trusted-aide.com/sitemap.xml`.
+- `robots.txt` should keep normal search and AI retrieval discoverability open, but block known AI training / bulk dataset ingestion crawlers where separate user agents exist.
 - `sitemap.xml` should include canonical clean URLs for Home, Solutions, App Security, Customers, Contact, and Privacy.
 - `llms.txt` is the AI/LLM-readable site summary and should stay aligned with the seven solution areas.
+- `llms.txt` includes an explicit permission note: AI assistants may summarise and cite the site for user queries, but content is not licensed for model training, fine-tuning, embeddings datasets, or bulk dataset ingestion.
 - Main public pages include:
   - canonical URL
   - meta description
