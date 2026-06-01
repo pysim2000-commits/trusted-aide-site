@@ -33,7 +33,8 @@ Deployment model: changes pushed to GitHub `main` are expected to be picked up b
 - Avoid excessive vertical gaps between sections, especially on the App Security page.
 - Do not make section labels or headings comically large. Use emphasis, but keep proportions polished.
 - The Solutions overview style is a good reference:
-  - prominent teal label/button on the left or centered where appropriate
+  - prominent section label on the left or centered where appropriate
+  - label style should be white background, dark teal/green text, subtle border/shadow
   - compact heading text beside or below it
   - service cards in a clean grid
 
@@ -105,6 +106,7 @@ Important visual direction:
 
 - Follow the Solutions page’s compact, professional design language.
 - Section labels such as `THE PROBLEM`, `OWASP TOP 10`, `APPSEC STATISTICS`, `OUR APPROACH` should be visually clear but not huge.
+- Section labels should use white background with dark teal/green text, not white text on green background.
 - The heading underneath should be smaller and compact, not a giant serif headline.
 - Supporting descriptions should be normal text size.
 - `What This Means` is a supporting note under the same problem section, not a major section headline.
