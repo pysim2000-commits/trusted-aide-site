@@ -682,6 +682,37 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   margin-left: 0;
   margin-right: 0;
 }
+.appsec-insight-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--teal);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-top: 22px;
+  padding: 22px 24px;
+}
+.appsec-insight-card h3 {
+  color: var(--teal);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin: 0 0 8px;
+}
+.appsec-insight-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0 0 10px;
+}
+.appsec-insight-card .check-list li {
+  font-size: 0.88rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.appsec-insight-card .check-list li::before {
+  top: 15px;
+}
 .owasp-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
