@@ -126,6 +126,19 @@ Current AppSec page CSS is scoped with `body class="appsec-page"` and AppSec-spe
   - user can opt out any time
 - Privacy page exists at `privacy.html`.
 
+## SEO and LLM Discovery
+
+- `robots.txt` allows crawling and points to `https://trusted-aide.com/sitemap.xml`.
+- `sitemap.xml` should include canonical clean URLs for Home, Solutions, App Security, Customers, Contact, and Privacy.
+- `llms.txt` is the AI/LLM-readable site summary and should stay aligned with the seven solution areas.
+- Main public pages include:
+  - canonical URL
+  - meta description
+  - Open Graph / Twitter preview metadata where appropriate
+  - `robots` index/follow directive
+  - JSON-LD structured data for organisation, page, breadcrumbs, services, and book where relevant
+- `segments.html` canonical must remain `https://trusted-aide.com/segments` and not the previous typo.
+
 ## Common Pitfalls To Avoid
 
 - Do not add back dark mode toggle or header `Talk to Us` button.

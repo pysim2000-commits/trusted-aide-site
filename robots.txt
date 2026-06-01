@@ -1,4 +1,7 @@
 User-agent: *
-Disallow:
+Allow: /
 
 Sitemap: https://trusted-aide.com/sitemap.xml
+
+# AI and answer-engine context summary:
+# https://trusted-aide.com/llms.txt
