@@ -42,7 +42,7 @@
       "operatingSystem": "Chrome or Edge on Mac and Windows",
       "offers": {
         "@type": "Offer",
-        "price": "69",
+        "price": "49.90",
         "priceCurrency": "SGD",
         "description": "3 months of full access. One-time payment."
       },
@@ -57,6 +57,7 @@
         "ATS-Optimised Tailored Resume",
         "Application Archive",
         "Interview Notes & Insights Recording",
+        "AI Career Coach",
         "BYOK AI — OpenAI, Claude, Gemini, or free local model"
       ]
     },
@@ -67,8 +68,8 @@
       "description": "Private AI career advisor for job seekers. Tailored cover letters, ATS-optimised resumes, application tracking, and interview notes — all browser-based with no external data storage.",
       "brand": { "@type": "Brand", "name": "Trusted-Aide" },
       "offers": [
-        { "@type": "Offer", "price": "69", "priceCurrency": "SGD", "description": "3-month access" },
-        { "@type": "Offer", "price": "89", "priceCurrency": "SGD", "description": "6-month access" }
+        { "@type": "Offer", "price": "49.90", "priceCurrency": "SGD", "description": "3-month access" },
+        { "@type": "Offer", "price": "63", "priceCurrency": "SGD", "description": "6-month access" }
       ]
     },
     {
@@ -81,7 +82,7 @@
         { "@type": "Question", "name": "Do I need to be technical?", "acceptedAnswer": { "@type": "Answer", "text": "No. One-time AI provider setup guided by a step-by-step flow. Everything else is point-and-click." }},
         { "@type": "Question", "name": "What if I switch computers?", "acceptedAnswer": { "@type": "Answer", "text": "Your data backs up automatically to your cloud folder. Restore on any new computer in seconds." }},
         { "@type": "Question", "name": "What browsers and platforms does it support?", "acceptedAnswer": { "@type": "Answer", "text": "Chrome or Edge on Mac and Windows. Additional browsers in future updates." }},
-        { "@type": "Question", "name": "What happens after 3 months?", "acceptedAnswer": { "@type": "Answer", "text": "You choose: continue at SGD 89 for 6 months, or stop. Your data stays safe in your own cloud folder either way." }},
+        { "@type": "Question", "name": "What happens after 3 months?", "acceptedAnswer": { "@type": "Answer", "text": "You choose: continue at SGD 63 for 6 months, SGD 90 for 12 months, or SGD 4.99/month. Your data stays safe in your own cloud folder either way." }},
         { "@type": "Question", "name": "Will it keep working long-term?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It's self-contained in your browser. Core features work independently of any external service. Switch AI providers any time." }}
       ]
     }
@@ -289,6 +290,52 @@ a{color:inherit;text-decoration:none}
   .cp-footer__grid{grid-template-columns:1fr}
   .cp-footer__bottom{flex-direction:column;gap:12px}
 }
+
+/* ── Hero preview ────────────────────────────────────────────── */
+.hero-preview{max-width:var(--container);margin:-40px auto 0;padding:0 24px;position:relative;z-index:2}
+.hero-preview__inner{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 12px 48px rgba(0,0,0,0.12)}
+.hero-preview__img{width:100%;display:block}
+.hero-preview__solutions{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:3px solid var(--electric)}
+.hero-preview__item{padding:20px 24px;text-align:center;border-right:1px solid var(--border)}
+.hero-preview__item:last-child{border-right:none}
+.hero-preview__item-icon{font-size:1.4rem;margin-bottom:6px}
+.hero-preview__item-text{font-size:0.85rem;color:var(--text);font-weight:600;line-height:1.5}
+@media(max-width:768px){
+  .hero-preview__solutions{grid-template-columns:1fr}
+  .hero-preview__item{border-right:none;border-bottom:1px solid var(--border)}
+  .hero-preview__item:last-child{border-bottom:none}
+}
+
+/* ── Feature rows (alternating) ──────────────────────────────── */
+.feature-rows{display:flex;flex-direction:column;gap:64px;margin-top:48px}
+.feature-row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.feature-row--reverse .feature-row__text{order:-1}
+.feature-row__img img{width:100%;border-radius:var(--radius);box-shadow:0 8px 32px rgba(0,0,0,0.1);border:1px solid var(--border)}
+.feature-row__text .feature-card__icon{font-size:1.6rem;margin-bottom:14px}
+.feature-row__text h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:6px}
+.feature-row__text .feature-card__hook{font-size:0.88rem;color:var(--electric-dim);font-weight:600;margin-bottom:12px}
+.feature-row__text p{font-size:0.93rem;color:var(--muted);line-height:1.7}
+.feature-row--text-only{max-width:700px;margin:0 auto;text-align:center}
+.feature-row--text-only .feature-card__icon{font-size:2rem}
+.feature-row--text-only h3{font-size:1.2rem}
+.feature-row--text-only p{max-width:560px;margin:0 auto}
+@media(max-width:768px){
+  .feature-row{grid-template-columns:1fr;gap:24px}
+  .feature-row--reverse .feature-row__text{order:0}
+}
+
+/* ── Partner section ─────────────────────────────────────────── */
+.partner-section{background:linear-gradient(135deg,#0F172A 0%,#1E293B 100%);padding:64px 0;text-align:center}
+.partner-section__inner{max-width:640px;margin:0 auto}
+.partner-section__badge{display:inline-flex;align-items:center;gap:8px;background:rgba(14,165,233,0.15);border:1px solid rgba(14,165,233,0.3);border-radius:20px;padding:6px 16px;font-size:0.78rem;font-weight:600;color:var(--electric);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:20px}
+.partner-section h2{font-family:var(--font-display);font-size:clamp(1.4rem,2.5vw,1.8rem);font-weight:800;color:var(--white);margin-bottom:12px;line-height:1.3}
+.partner-section p{color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.7;margin-bottom:24px}
+.partner-section__tiers{display:flex;gap:16px;justify-content:center;margin-bottom:28px;flex-wrap:wrap}
+.partner-section__tier{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-sm);padding:14px 20px;text-align:center;min-width:180px}
+.partner-section__tier-label{font-size:0.75rem;color:rgba(255,255,255,0.4);text-transform:uppercase;font-weight:600;letter-spacing:0.06em;margin-bottom:4px}
+.partner-section__tier-val{font-family:var(--font-display);font-size:1.3rem;font-weight:800;color:var(--electric)}
+.partner-section .btn--primary{margin-bottom:12px}
+.partner-section .micro{font-size:0.8rem;color:rgba(255,255,255,0.35)}
 </style>
 </head>
 <body>
@@ -326,7 +373,7 @@ a{color:inherit;text-decoration:none}
       <h1 class="hero__h1">Use an <span class="accent">AI career advisor</span> against the AI that's screening you out.</h1>
       <p class="hero__lede">Get career insights & advice, Evaluate Jobs Postings, Write tailored cover letters and ATS-optimised resumes for every role. Remember exactly what you sent — months later, when the interview call comes. Track progress. Capture insights. Apply smarter. Improve understanding of your profile over time.</p>
       <div class="hero__actions">
-        <a href="https://buy.stripe.com/6oU8wQ0As5IEg8ydEncjS00" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Get CareerPocket AI — SGD 69 →</a>
+        <a href="https://buy.stripe.com/6oU8wQ0As5IEg8ydEncjS00" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Get CareerPocket AI — SGD 49.90 →</a>
         <a href="#what-is-careerpocket-ai" class="btn btn--secondary">See how it works</a>
       </div>
       <div class="hero__trust">
@@ -362,6 +409,27 @@ a{color:inherit;text-decoration:none}
   </div>
 </section>
 
+<!-- ===== HERO PRODUCT PREVIEW ===== -->
+<div class="hero-preview">
+  <div class="hero-preview__inner">
+    <img src="/images/screenshot-4-application-archive.png" alt="CareerPocket AI Application Archive — track every job application" class="hero-preview__img" loading="eager">
+    <div class="hero-preview__solutions">
+      <div class="hero-preview__item">
+        <div class="hero-preview__item-icon">🎯</div>
+        <div class="hero-preview__item-text">Scores jobs for suitability — focus effort on the right roles</div>
+      </div>
+      <div class="hero-preview__item">
+        <div class="hero-preview__item-icon">✍️</div>
+        <div class="hero-preview__item-text">Generates custom cover letters and ATS-optimised resumes</div>
+      </div>
+      <div class="hero-preview__item">
+        <div class="hero-preview__item-icon">📁</div>
+        <div class="hero-preview__item-text">Tracks everything across applications and long interview cycles</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ===== SECTION 1.5: WHAT IS CAREERPOCKET AI (GEO ANCHOR) ===== -->
 <section class="section section--surface" id="what-is-careerpocket-ai">
   <div class="container">
@@ -376,7 +444,7 @@ a{color:inherit;text-decoration:none}
       <strong>Compared to:</strong> Teal, Huntr, Jobscan<br>
       <strong>Key differentiators:</strong> Browser-based privacy, BYOK AI flexibility, ATS-optimised resume generation, application archive with interview notes<br>
       <strong>Platform:</strong> Chrome · Mac · Windows<br>
-      <strong>Pricing:</strong> SGD 69 for 3 months · SGD 89 for 6 months
+      <strong>Pricing:</strong> SGD 49.90 for 3 months · SGD 63 for 6 months · SGD 90 for 12 months
     </div>
   </div>
 </section>
@@ -473,42 +541,85 @@ a{color:inherit;text-decoration:none}
       <div class="section-eyebrow">Features</div>
       <h2 class="section-title">Everything your job search needs — in one private tool.</h2>
     </div>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <div class="feature-card__icon">🎯</div>
-        <h3>AI Job Scoring</h3>
-        <div class="feature-card__hook">Stop wasting effort on long-shots.</div>
-        <p>Paste or capture a job listing and get a 0–10 fit score with a full breakdown — seniority match, sector fit, scope, salary alignment, and your differentiating angle. Plus an honest list of gaps so you know exactly what to address before you apply.</p>
+    <div class="feature-rows">
+      <!-- Feature 1: AI Job Scoring -->
+      <div class="feature-row">
+        <div class="feature-row__img">
+          <img src="/images/screenshot-1-job-scoring.png" alt="AI Job Scoring — 0-10 fit score with detailed breakdown" loading="lazy">
+        </div>
+        <div class="feature-row__text">
+          <div class="feature-card__icon">🎯</div>
+          <h3>AI Job Scoring</h3>
+          <div class="feature-card__hook">Stop wasting effort on long-shots.</div>
+          <p>Paste or capture a job listing and get a 0–10 fit score with a full breakdown — seniority match, sector fit, scope, salary alignment, and your differentiating angle. Plus an honest list of gaps so you know exactly what to address before you apply.</p>
+        </div>
       </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">✍️</div>
-        <h3>AI Cover Letter Writer</h3>
-        <div class="feature-card__hook">A strong first draft in seconds — grounded in your real experience.</div>
-        <p>Generates a tailored, multi-paragraph cover letter based strictly on your background and the actual job description. No generic AI waffle. You review, refine with the AI, and send when it's yours.</p>
+      <!-- Feature 2: AI Cover Letter Writer -->
+      <div class="feature-row feature-row--reverse">
+        <div class="feature-row__img">
+          <img src="/images/screenshot-2-cover-letter.png" alt="AI Cover Letter Writer — tailored multi-paragraph cover letter" loading="lazy">
+        </div>
+        <div class="feature-row__text">
+          <div class="feature-card__icon">✍️</div>
+          <h3>AI Cover Letter Writer</h3>
+          <div class="feature-card__hook">A strong first draft in seconds — grounded in your real experience.</div>
+          <p>Generates a tailored, multi-paragraph cover letter based strictly on your background and the actual job description. No generic AI waffle. You review, refine with the AI, and send when it's yours.</p>
+        </div>
       </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">📄</div>
-        <h3>AI Tailored Resume — ATS-Optimised</h3>
-        <div class="feature-card__hook">A role-specific resume per application — formatted to pass AI screening.</div>
-        <p>Reorders your competencies, sharpens your summary, and surfaces your most relevant experience for each role. Optimised for ATS keyword matching and formatting so your application reaches a human reviewer. Your original resume is always preserved.</p>
+      <!-- Feature 3: AI Tailored Resume -->
+      <div class="feature-row">
+        <div class="feature-row__img">
+          <img src="/images/screenshot-3-tailored-resume.png" alt="AI Tailored Resume — ATS-optimised, role-specific" loading="lazy">
+        </div>
+        <div class="feature-row__text">
+          <div class="feature-card__icon">📄</div>
+          <h3>AI Tailored Resume — ATS-Optimised</h3>
+          <div class="feature-card__hook">A role-specific resume per application — formatted to pass AI screening.</div>
+          <p>Reorders your competencies, sharpens your summary, and surfaces your most relevant experience for each role. Optimised for ATS keyword matching and formatting so your application reaches a human reviewer. Your original resume is always preserved.</p>
+        </div>
       </div>
-      <div class="feature-card">
+      <!-- Feature 4: Application Archive (text-only — screenshot used in hero) -->
+      <div class="feature-row--text-only">
         <div class="feature-card__icon">📁</div>
         <h3>Application Archive</h3>
         <div class="feature-card__hook">Months later, when the call comes — you know exactly what you sent.</div>
         <p>Every cover letter and tailored resume is permanently saved to its job and viewable any time. Walk into every interview aligned with your own application, not guessing.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">💡</div>
-        <h3>Insights &amp; Notes Recording</h3>
-        <div class="feature-card__hook">The feature that makes every next application sharper than the last.</div>
-        <p>Every application has a notes field for everything you learn: who interviewed you, what came up, technical gaps flagged, salary signals, follow-up actions. Patterns across applications keep improving your materials.</p>
+      <!-- Feature 5: Insights & Notes -->
+      <div class="feature-row feature-row--reverse">
+        <div class="feature-row__img">
+          <img src="/images/screenshot-5-notes.png" alt="Insights and Notes — capture interview takeaways per application" loading="lazy">
+        </div>
+        <div class="feature-row__text">
+          <div class="feature-card__icon">💡</div>
+          <h3>Insights &amp; Notes Recording</h3>
+          <div class="feature-card__hook">The feature that makes every next application sharper than the last.</div>
+          <p>Every application has a notes field for everything you learn: who interviewed you, what came up, technical gaps flagged, salary signals, follow-up actions. Patterns across applications keep improving your materials.</p>
+        </div>
       </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">⚡</div>
-        <h3>Flexible AI — Your Choice, Your Cost</h3>
-        <div class="feature-card__hook">Free local AI or frontier quality — you decide.</div>
-        <p>Connect a free local model for zero token cost and complete data isolation, or bring your own API key for OpenAI, Claude, Gemini, or any compatible provider. You control the cost, the privacy level, and the provider — and you can switch any time.</p>
+      <!-- Feature 6: Flexible AI -->
+      <div class="feature-row">
+        <div class="feature-row__img">
+          <img src="/images/screenshot-6-flexible-ai.png" alt="Flexible AI provider — OpenAI, Claude, Gemini, or free local model" loading="lazy">
+        </div>
+        <div class="feature-row__text">
+          <div class="feature-card__icon">⚡</div>
+          <h3>Flexible AI — Your Choice, Your Cost</h3>
+          <div class="feature-card__hook">Free local AI or frontier quality — you decide.</div>
+          <p>Connect a free local model for zero token cost and complete data isolation, or bring your own API key for OpenAI, Claude, Gemini, or any compatible provider. You control the cost, the privacy level, and the provider — and you can switch any time.</p>
+        </div>
+      </div>
+      <!-- Feature 7: Career Chat (NEW) -->
+      <div class="feature-row feature-row--reverse">
+        <div class="feature-row__img">
+          <img src="/images/screenshot-7-career-chat.png" alt="Career Chat — AI career coach that knows your background and pipeline" loading="lazy">
+        </div>
+        <div class="feature-row__text">
+          <div class="feature-card__icon">💬</div>
+          <h3>AI Career Coach</h3>
+          <div class="feature-card__hook">An advisor that knows your full background, your pipeline, and your targets.</div>
+          <p>Ask anything about your job search — what roles to target, how to position yourself, how to prepare for interviews, how to negotiate offers. Your AI career coach knows your resume, your application history, and your notes. Every conversation builds on what came before.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -526,7 +637,7 @@ a{color:inherit;text-decoration:none}
     </div>
     <div class="competitor-strip">
       <strong>Teal, Huntr, and Jobscan charge SGD 470–800 a year.</strong><br>
-      CareerPocket AI: SGD 69 to start. Same job — a fraction of the cost. And none of them keep your data private.
+      CareerPocket AI: SGD 49.90 to start. Same job — a fraction of the cost. And none of them keep your data private.
     </div>
     <table class="compare-table">
       <thead>
@@ -546,7 +657,7 @@ a{color:inherit;text-decoration:none}
         <tr><td><strong>Interview notes &amp; insights</strong></td><td class="check">✓</td><td class="cross">—</td><td class="cross">—</td><td class="cross">—</td></tr>
         <tr><td><strong>Data stays on your device</strong></td><td class="check">✓</td><td class="cross">Cloud</td><td class="cross">Cloud</td><td class="cross">Cloud</td></tr>
         <tr><td><strong>BYOK / free local AI</strong></td><td class="check">✓</td><td class="cross">—</td><td class="cross">—</td><td class="cross">—</td></tr>
-        <tr><td><strong>Annual cost</strong></td><td class="check">SGD 69</td><td class="cross">~SGD 470/yr</td><td class="cross">~SGD 485/yr</td><td class="cross">~SGD 795/yr</td></tr>
+        <tr><td><strong>Annual cost</strong></td><td class="check">SGD 49.90</td><td class="cross">~SGD 470/yr</td><td class="cross">~SGD 485/yr</td><td class="cross">~SGD 795/yr</td></tr>
       </tbody>
     </table>
   </div>
@@ -562,8 +673,8 @@ a{color:inherit;text-decoration:none}
     <div class="pricing-wrapper">
       <div class="pricing-card">
         <div class="pricing-card__badge">Most Popular</div>
-        <div class="pricing-card__price"><span>SGD</span> 69</div>
-        <div class="pricing-card__sub">3 months of full access · One-time payment</div>
+        <div class="pricing-card__price"><span>SGD</span> 49.90</div>
+        <div class="pricing-card__sub">3 months of full access · One-time payment · From SGD 4.99/mo after</div>
         <ul class="pricing-includes">
           <li>All features — scoring, cover letters, ATS-optimised resumes, archive, notes, AI advisor</li>
           <li>Unlimited jobs and applications</li>
@@ -573,8 +684,8 @@ a{color:inherit;text-decoration:none}
           <li>Works in Chrome or Edge on Mac and Windows</li>
           <li>One-time license key — no account, no login</li>
         </ul>
-        <a href="https://buy.stripe.com/6oU8wQ0As5IEg8ydEncjS00" target="_blank" rel="noopener" class="btn btn--primary" style="width:100%;justify-content:center;font-size:1.05rem;padding:15px">Get CareerPocket AI — SGD 69 →</a>
-        <div class="pricing-6m">Prefer 6 months? <a href="https://buy.stripe.com/9B6fZi3MEgni8G60RBcjS01" target="_blank" rel="noopener">SGD 89 →</a></div>
+        <a href="https://buy.stripe.com/6oU8wQ0As5IEg8ydEncjS00" target="_blank" rel="noopener" class="btn btn--primary" style="width:100%;justify-content:center;font-size:1.05rem;padding:15px">Get CareerPocket AI — SGD 49.90 →</a>
+        <div class="pricing-6m">Prefer 6 months? <a href="https://buy.stripe.com/9B6fZi3MEgni8G60RBcjS01" target="_blank" rel="noopener">SGD 63 →</a> · 12 months? <a href="https://buy.stripe.com/dRmcN65UMb2Yg8y7fZcjS02" target="_blank" rel="noopener">SGD 90 →</a></div>
         <div class="payment-badges">
           <span class="payment-badge">💳 Card</span>
           <span class="payment-badge">🇸🇬 PayNow</span>
@@ -627,8 +738,8 @@ a{color:inherit;text-decoration:none}
       </div>
       <div class="faq-item">
         <h3>What happens after 3 months?</h3>
-        <div class="faq-tldr">You choose to get a 6-month access at SGD 89, or stop. Your data stays safe in your own cloud folder either way.</div>
-        <p class="faq-detail">You'll have the option to continue with 6-month access at SGD 89. If you don't continue, access pauses — but your data is safe in your own cloud folder and can be restored any time.</p>
+        <div class="faq-tldr">You choose: continue at SGD 63 for 6 months, SGD 90 for 12 months, or SGD 4.99/month. Your data stays safe in your own cloud folder either way.</div>
+        <p class="faq-detail">You'll have the option to continue with 6-month access at SGD 63, 12-month at SGD 90, or monthly at SGD 4.99. If you don't continue, access pauses — but your data is safe in your own cloud folder and can be restored any time.</p>
       </div>
       <div class="faq-item">
         <h3>Will it keep working long-term?</h3>
@@ -639,13 +750,36 @@ a{color:inherit;text-decoration:none}
   </div>
 </section>
 
+<!-- ===== PARTNER SECTION ===== -->
+<section class="partner-section">
+  <div class="container">
+    <div class="partner-section__inner">
+      <div class="partner-section__badge">🤝 Partnership Opportunity</div>
+      <h2>Sell CareerPocket AI to your clients</h2>
+      <p>Career coaches, HR consultancies, recruitment agencies, outplacement firms, and universities — earn recurring income by offering CareerPocket AI to the job seekers you already serve.</p>
+      <div class="partner-section__tiers">
+        <div class="partner-section__tier">
+          <div class="partner-section__tier-label">Reseller</div>
+          <div class="partner-section__tier-val">30–40% off</div>
+        </div>
+        <div class="partner-section__tier">
+          <div class="partner-section__tier-label">Distributor</div>
+          <div class="partner-section__tier-val">45% off</div>
+        </div>
+      </div>
+      <a href="mailto:sales@trusted-aide.com?subject=CareerPocket%20AI%20Partnership%20Enquiry" class="btn btn--primary">Partner with us → sales@trusted-aide.com</a>
+      <p class="micro">No exclusivity · Start selling immediately · Bulk key delivery</p>
+    </div>
+  </div>
+</section>
+
 <!-- ===== SECTION 8: FINAL CTA ===== -->
 <section class="final-cta">
   <div class="container">
     <div class="final-cta__inner">
       <h2>Your job search is already hard enough. Your tools should be working harder.</h2>
       <p>CareerPocket AI handles the tailoring, the ATS optimisation, the tracking, and the memory — so you can focus on landing the role. Private. Flexible. Built for serious job seekers who apply to win.</p>
-      <a href="https://buy.stripe.com/6oU8wQ0As5IEg8ydEncjS00" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Get CareerPocket AI — SGD 69 →</a>
+      <a href="https://buy.stripe.com/6oU8wQ0As5IEg8ydEncjS00" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Get CareerPocket AI — SGD 49.90 →</a>
       <p class="micro">Secure checkout · Instant delivery by email · Works in Chrome or Edge on Mac and Windows</p>
     </div>
   </div>
