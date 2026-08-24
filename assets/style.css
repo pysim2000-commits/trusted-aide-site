@@ -183,6 +183,14 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
 .content-block { padding-right: 20px; }
 .content-block p { color: var(--text-muted); margin-bottom: 14px; }
 
+/* Single-column centered card — for feature-band sections with only one content-block (no second column) */
+.feature-band-solo {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
+}
+.feature-band-solo .content-block { padding-right: 0; }
+
 /* --- Why section --- */
 .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
 .why-grid .content-block p { color: var(--text-muted); margin-bottom: 12px; }
