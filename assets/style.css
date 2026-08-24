@@ -895,7 +895,7 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   .cred-item { font-size: 0.8rem; }
 }
 
-/* --- 4-card solutions grid override (homepage only) --- */
+/* --- 4-card solutions grid override (legacy) --- */
 .solutions-overview-grid--4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -904,4 +904,15 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
 }
 @media (max-width: 600px) {
   .solutions-overview-grid--4 { grid-template-columns: 1fr; }
+}
+
+/* --- 3-card solutions grid (homepage pillars) --- */
+.solutions-overview-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 1024px) {
+  .solutions-overview-grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .solutions-overview-grid--3 { grid-template-columns: 1fr; }
 }
