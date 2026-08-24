@@ -845,3 +845,63 @@ h1,h2,h3,h4 { font-family: 'Instrument Serif', serif; color: var(--heading-color
   .training-service-grid .training-feature-card { grid-template-columns: 1fr; }
   .owasp-grid { grid-template-columns: 1fr; }
 }
+
+/* --- Typographic hero (homepage) --- */
+.hero-type { padding: 110px 0 100px; }
+.hero-type-inner { max-width: 760px; }
+.hero-type .title { font-size: clamp(2.4rem, 5vw, 4rem); margin-bottom: 24px; }
+.hero-type .lede { font-size: 1.15rem; max-width: 600px; }
+@media (max-width: 600px) {
+  .hero-type { padding: 72px 0 64px; }
+}
+
+/* --- Credentials strip --- */
+.creds-strip {
+  background: var(--navy);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 18px 0;
+}
+.creds-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 4px;
+}
+.cred-item {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.65);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+.cred-item a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  font-weight: 600;
+}
+.cred-item a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.cred-item em { font-style: italic; }
+.cred-sep {
+  color: rgba(255,255,255,0.25);
+  font-size: 0.82rem;
+  padding: 0 4px;
+}
+@media (max-width: 600px) {
+  .creds-inner { gap: 6px 8px; }
+  .cred-sep { display: none; }
+  .cred-item { font-size: 0.8rem; }
+}
+
+/* --- 4-card solutions grid override (homepage only) --- */
+.solutions-overview-grid--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+@media (max-width: 1024px) {
+  .solutions-overview-grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .solutions-overview-grid--4 { grid-template-columns: 1fr; }
+}
